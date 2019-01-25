@@ -1,0 +1,11 @@
+ <h2>Heroes: <small>Marvel and DC</small></h2>
+<hr>
+
+<div *ngIf="heros.length===0" class="alert alert-danger">
+  There are no results with the term: {{ heroSearch }}
+</div>
+<div class="card-columns" >
+  <app-hero-card [hero]="hero" [index]="hero.id" *ngFor="let hero of heros"></app-hero-card>
+</div>
+
+<!-- <a [routerLink]="[ '/hero', i ]" class="btn btn-outline-primary">See more link...</a> -->

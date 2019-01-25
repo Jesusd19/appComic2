@@ -1,0 +1,14 @@
+<div class="card animated fadeIn fast">
+  <img [src]="hero.img" class="card-img-top" [alt]="hero.nombre">
+  <div class="card-body">
+    <h5 class="card-title"> {{ hero.nombre }}</h5>
+    <p class="card-text">{{ hero.bio }}</p>
+    <p class="card-text"><small class="text-muted">First appearance in {{ hero.aparicion }} </small></p>
+    <button (click)="verHero()" type="button" class="btn btn-outline-primary btn-block">
+      See more...
+    </button>
+    <!-- <a [routerLink]="[ '/hero', i ]" class="btn btn-outline-primary">See more link...</a> -->
+  </div>
+</div>
+
+ 
